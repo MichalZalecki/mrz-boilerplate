@@ -8,12 +8,13 @@ MRZ Boilerplate
 Minimal CSS(SCSS) starter kit with pre-configured Grunt.js tasks for better performance and optimalization.
 
  1. SCSS
- 2. Base styles for typography, buttons, inputs and tables
- 3. Flexbox Grid - based on [flexboxgrid.com](http://flexboxgrid.com)
- 4. Vertical Rythm
- 5. Easy to work with, great base for something awesome!
- 6. [NOT A UI KIT!](https://twitter.com/brad_frost/status/516603995075653632)
- 7. Grunt.js tasks:
+ 2. BEM naming convention
+ 3. Base styles for typography, buttons, inputs and tables
+ 4. Flexbox Grid - based on [flexboxgrid.com](http://flexboxgrid.com)
+ 5. Vertical Rythm
+ 6. Easy to work with, great base for something awesome!
+ 7. [NOT A UI KIT!](https://twitter.com/brad_frost/status/516603995075653632)
+ 8. Grunt.js tasks:
   * sass - SASS files compilation
   * autoprefixer - vendor prefixes
   * uncss - remove unused CSS
