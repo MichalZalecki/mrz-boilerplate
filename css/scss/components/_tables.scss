@@ -1,0 +1,39 @@
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+th {
+	text-align: left;
+	font-weight: bold;
+}
+
+th,
+td {
+	padding: .25rem 1rem;
+	line-height: inherit;
+}
+
+th {
+	vertical-align: bottom;
+}
+
+td {
+	vertical-align: top;
+}
+
+.table--light th,
+.table--light td {
+	border-bottom: 1px solid $gray-color;
+}
+
+.table--light tr:last-child th,
+.table--light tr:last-child td {
+	border-bottom: 0;
+}
+
+.table--zebra tr:nth-child(even) {
+	background-color: lighten($gray-color, 20%);
+}

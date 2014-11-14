@@ -1,0 +1,30 @@
+{
+  "name": "mrz-boilerplate",
+  "version": "0.0.1",
+  "homepage": "https://github.com/MichalRazorZalecki/mrz-boilerplate",
+  "authors": [
+    "MichalRazorZalecki <michal.zalecki@webroad.pl>"
+  ],
+  "description": "Minimal CSS(SCSS) starter kit with pre-configured Grunt.js tasks for better performance and optimalization.",
+  "main": "index.html",
+  "keywords": [
+    "css",
+    "scss",
+    "vertical-rythm",
+    "boilerplate",
+    "grunt"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.2.0",
+    "normalize.css": "~3.0.2"
+  }
+}

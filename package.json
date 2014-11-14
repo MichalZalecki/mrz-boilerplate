@@ -1,0 +1,33 @@
+{
+  "title": "MRZ Boilerplate",
+  "name": "mrz-boilerplate",
+  "description": "Minimal CSS(SCSS) starter kit with pre-configured Grunt.js tasks for better performance and optimalization.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Michał Załęcki",
+    "email": "michalzalecki@webroad.pl"
+  },
+  "homepage": "https://github.com/MichalRazorZalecki/mrz-boilerplate",
+  "bugs": "https://github.com/MichalRazorZalecki/mrz-boilerplate/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/MichalRazorZalecki/mrz-boilerplate/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0",
+    "npm": ">= 1.3.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "~1.0.1",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-uncss": "^0.3.7"
+  },
+  "dependencies": {
+    "flexboxgrid": "^5.0.0"
+  }
+}

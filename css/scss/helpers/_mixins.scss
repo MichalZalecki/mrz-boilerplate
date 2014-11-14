@@ -1,0 +1,107 @@
+/*------------------------------------*\
+    EM/REM MIXINS
+\*------------------------------------*/
+
+@function em($target, $context: $base-font-size) {
+    @return ($target / $context) * 1em;
+}
+
+@function rem($target) {
+    @return strip-unit($target) / 10 * 1rem;
+}
+
+/*------------------------------------*\
+    UTILITIES MIXINS
+\*------------------------------------*/
+
+@mixin size($size) {
+    height: $size;
+    width: $size;
+}
+
+@mixin group {
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+@mixin clearfix {
+    @include group;
+}
+
+/*------------------------------------*\
+    CSS3 MIXINS (autoprefixer instead)
+\*------------------------------------*/
+
+@mixin keyframe($animation-name){
+    @-webkit-keyframes $animation-name{
+        @content;
+    }
+
+    @-moz-keyframes $animation-name{
+        @content;
+    }
+
+    @-ms-keyframes $animation-name{
+        @content;
+    }
+
+    @-o-keyframes $animation-name{
+        @content;
+    }
+
+    @keyframes $animation-name{
+        @content;
+    }
+}
+
+@mixin vendor($property, $value...){
+    -webkit-#{$property}: $value;
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+         -o-#{$property}: $value;
+            #{$property}: $value;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+            box-shadow: $shadow;
+}
+
+@mixin box-sizing($type: border-box) {
+    -webkit-box-sizing: $type;
+       -moz-box-sizing: $type;
+            box-sizing: $type;
+}
+
+@mixin hypens($hyphens: auto) {
+    -webkit-hyphens: $hyphens;
+       -moz-hyphens: $hyphens;
+        -ms-hyphens: $hyphens;
+            hyphens: $hyphens;
+}
+
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+}
+
+@mixin transform($transform...) {
+    -webkit-transform: $transform;
+       -moz-transform: $transform;
+        -ms-transform: $transform;
+         -o-transform: $transform;
+            transform: $transform;
+}

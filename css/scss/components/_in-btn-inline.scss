@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    INPUT BUTTON INLINE
+\*------------------------------------*/
+
+.in-btn-inline {
+
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    &__item {
+        width: auto !important;
+        -webkit-flex: 1 auto;
+        flex: 1 auto;
+    }
+}

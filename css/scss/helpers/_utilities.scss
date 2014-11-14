@@ -1,0 +1,85 @@
+/*------------------------------------*\
+    UTILITIES CLASSES
+\*------------------------------------*/
+
+.group,
+.clearfix {
+	@include group;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.fit {
+    max-width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.regular {
+    font-weight: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.gray-box {
+    margin-bottom: rem($base-line-height);
+    background: rgba(black, .1);
+}

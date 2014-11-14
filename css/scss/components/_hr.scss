@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    HR
+\*------------------------------------*/
+
+hr {
+	margin: 0;
+	@include vr-mb(1);
+	background: $gray-color;
+	border: 0;
+	height: 1px;
+}
+
+.hr--gradient {
+	color: red;
+	background-image: linear-gradient(90deg, lighten($gray-color, 20%), $gray-color, lighten($gray-color, 20%));
+}

@@ -1,0 +1,65 @@
+/*------------------------------------*\
+    BUTTONS
+\*------------------------------------*/
+
+.btn,
+.button {
+    transition: background-color .3s;
+    display: inline-block;
+    background-color: $primary-color;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: $base-line-height * 1.5;
+    margin: 0;
+    outline: none;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    i {
+        margin: 0 .5rem;
+    }
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+        color: white;
+        text-decoration: none;
+    }
+    &:hover,
+    &:focus {
+        background-color: darken($primary-color, 10%);
+    }
+    &:active, {
+        background-color: darken($primary-color, 20%);
+    }
+    &--radius {
+        border-radius: $brand-radius;
+    }
+    &--round {
+        border-radius: $base-line-height * 1.5;
+    }
+    &--ghost {
+        background-color: transparent;
+        border: 2px solid $primary-color;
+        color: $primary-color;
+        line-height: $base-line-height * 1.5 - 4px;
+        &:hover,
+        &:focus {
+            border-color: darken($primary-color, 10%);
+        }
+        &:active {
+            border-color: darken($primary-color, 20%);
+        }
+    }
+    &--3d {
+        box-shadow: 0 4px 0 0 darken($primary-color, 30%);
+        &:active, {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 0 darken($primary-color, 30%);
+        }
+    }
+}
