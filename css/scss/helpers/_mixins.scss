@@ -1,18 +1,6 @@
-/*------------------------------------*\
-    EM/REM MIXINS
-\*------------------------------------*/
-
-@function em($target, $context: $base-font-size) {
-    @return ($target / $context) * 1em;
-}
-
-@function rem($target) {
-    @return strip-unit($target) / 10 * 1rem;
-}
-
-/*------------------------------------*\
+/*---------------------------------------*\
     UTILITIES MIXINS
-\*------------------------------------*/
+\*---------------------------------------*/
 
 @mixin size($size) {
     height: $size;
@@ -27,13 +15,19 @@
     }
 }
 
+// just an alias for group
 @mixin clearfix {
     @include group;
 }
 
-/*------------------------------------*\
-    CSS3 MIXINS (autoprefixer instead)
-\*------------------------------------*/
+/*---------------------------------------*\
+    CSS3 MIXINS
+
+    Those are not used as is by
+    MRZ Boilerplate because of
+    autoprefixer (as Grunt.js taks) is
+    used instead.
+\*---------------------------------------*/
 
 @mixin keyframe($animation-name){
     @-webkit-keyframes $animation-name{
@@ -104,4 +98,73 @@
         -ms-transform: $transform;
          -o-transform: $transform;
             transform: $transform;
+}
+
+/*---------------------------------------*\
+    COMPONENT: INPUTS MIXINS
+\*---------------------------------------*/
+
+@mixin input-variation($color) {
+    border-color: $color;
+    background-color: lighten($color, 50%);
+    &:focus {
+        box-shadow: inset $base-line-height/4 0 0 0 $color;
+    }
+}
+
+/*---------------------------------------*\
+    COMPONENT: BUTTONS MIXINS
+\*---------------------------------------*/
+
+@mixin btn-variation($color) {
+    background-color: $color;
+    &:hover,
+    &:focus {
+        background-color: darken($color, 10%);
+    }
+    &:active, {
+        background-color: darken($color, 20%);
+    }
+}
+
+@mixin btn-variation-ghost($color) {
+    border-color: $color;
+    color: $color;
+    &:hover,
+    &:focus {
+        color: white;
+        border-color: $color;
+        background-color: $color;
+    }
+    &:active {
+        border-color: darken($color, 10%);
+        background-color: darken($color, 10%);
+    }
+}
+
+@mixin btn-variation-3d($color) {
+    box-shadow: 0 4px 0 0 darken($color, 30%);
+    &:active, {
+        box-shadow: 0 2px 0 0 darken($color, 30%);
+    }
+}
+
+/*---------------------------------------*\
+    COMPONENT: VERTICAL RYTHM MIXINS
+\*---------------------------------------*/
+
+@mixin vr-mb($m: 1, $font-size: $vr-font-size) {
+    @if ($m != 0) {
+        @if $vr-use-rem {
+            @if ($vr-rem-ie8-fallback) {
+                margin-bottom: $m * $vr-line-height * 1px;
+            }
+            margin-bottom: $m * $vr-line-height / 10 * 1rem;
+        } @else {
+            margin-bottom: $m * $vr-line-height / $font-size * 1em;
+        }
+    } @else {
+        margin-bottom: 0;
+    }
+
 }

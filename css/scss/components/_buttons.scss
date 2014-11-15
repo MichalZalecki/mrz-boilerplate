@@ -1,12 +1,11 @@
-/*------------------------------------*\
+/*---------------------------------------*\
     BUTTONS
-\*------------------------------------*/
+\*---------------------------------------*/
 
-.btn,
-.button {
-    transition: background-color .3s;
+.btn {
+    @include btn-variation($primary-color);
+    transition: border-color .3s, background-color .3s;
     display: inline-block;
-    background-color: $primary-color;
     border: none;
     cursor: pointer;
     display: inline-block;
@@ -19,7 +18,7 @@
     text-transform: uppercase;
     vertical-align: middle;
     white-space: nowrap;
-    i {
+    > i {
         margin: 0 .5rem;
     }
     &,
@@ -29,37 +28,50 @@
         color: white;
         text-decoration: none;
     }
-    &:hover,
-    &:focus {
-        background-color: darken($primary-color, 10%);
+    &--success {
+        @include btn-variation($success-color);
     }
-    &:active, {
-        background-color: darken($primary-color, 20%);
+    &--warning {
+        @include btn-variation($warning-color);
+    }
+    &--error {
+        @include btn-variation($error-color);
     }
     &--radius {
-        border-radius: $brand-radius;
+        border-radius: $base-radius;
     }
     &--round {
         border-radius: $base-line-height * 1.5;
     }
-    &--ghost {
-        background-color: transparent;
-        border: 2px solid $primary-color;
-        color: $primary-color;
-        line-height: $base-line-height * 1.5 - 4px;
-        &:hover,
-        &:focus {
-            border-color: darken($primary-color, 10%);
-        }
-        &:active {
-            border-color: darken($primary-color, 20%);
-        }
-    }
     &--3d {
-        box-shadow: 0 4px 0 0 darken($primary-color, 30%);
+        @include btn-variation-3d($primary-color);
         &:active, {
             transform: translateY(2px);
-            box-shadow: 0 2px 0 0 darken($primary-color, 30%);
+        }
+        &.btn--success {
+            @include btn-variation-3d($success-color);
+        }
+        &.btn--warning {
+            @include btn-variation-3d($warning-color);
+        }
+        &.btn--error {
+            @include btn-variation-3d($error-color);
+        }
+    }
+    &--ghost {
+        @include btn-variation-ghost($primary-color);
+        background-color: transparent;
+        line-height: $base-line-height * 1.5 - 4px;
+        border-width: 2px;
+        border-style: solid;
+        &.btn--success {
+            @include btn-variation-ghost($success-color);
+        }
+        &.btn--warning {
+            @include btn-variation-ghost($warning-color);
+        }
+        &.btn--error {
+            @include btn-variation-ghost($error-color);
         }
     }
 }

@@ -1,17 +1,9 @@
-/*------------------------------------*\
+/*---------------------------------------*\
     VERTICAL RYTHM
-\*------------------------------------*/
+\*---------------------------------------*/
 
 /*
- *  Functions
- */
-
-@function strip-unit($value) {
-    @return $value / ($value * 0 + 1);
-}
-
-/*
- *  Variables
+ * Defaults Variables
  */
 
 $vr-use-rem:            true !default;
@@ -19,34 +11,14 @@ $vr-rem-ie8-fallback:   true !default;
 $vr-use-gradient:       false !default;
 $vr-grid-color:         #6AC8FF !default;
 
-$vr-line-height:  strip-unit($base-line-height);
-$vr-font-size:    strip-unit($base-font-size);
+$vr-line-height:  strip-unit($base-line-height) !default;
+$vr-font-size:    strip-unit($base-font-size) !default;
 
 $vr-headings: ("h1, .alpha", "h2, .beta", "h3, .gamma", "h4, .delta", "h5, .epsilon", "h6, .zeta"),
               ( 36,           30,          24,           21,           18,             16) !default;
 
 /*
- *  Mixins
- */
-
-@mixin vr-mb($m: 1, $font-size: $vr-font-size) {
-    @if ($m != 0) {
-        @if $vr-use-rem {
-            @if ($vr-rem-ie8-fallback) {
-                margin-bottom: $m * $vr-line-height * 1px;
-            }
-            margin-bottom: $m * $vr-line-height / 10 * 1rem;
-        } @else {
-            margin-bottom: $m * $vr-line-height / $font-size * 1em;
-        }
-    } @else {
-        margin-bottom: 0;
-    }
-
-}
-
-/*
- *  Styles
+ * Styles
  */
 
 html {

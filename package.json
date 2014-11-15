@@ -2,7 +2,7 @@
   "title": "MRZ Boilerplate",
   "name": "mrz-boilerplate",
   "description": "Minimal CSS(SCSS) starter kit with pre-configured Grunt.js tasks for better performance and optimalization.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Michał Załęcki",
     "email": "michalzalecki@webroad.pl"

@@ -1,16 +1,42 @@
-$primary-color:    	#00A8E0 !default;
-$font-color:       	#111111 !default;
-$gray-color:       	#AAAAAA !default;
-$success-color: 	#368A55 !default;
-$warning-color: 	#DBBC0D !default;
-$error-color: 		#CF2A0E !default;
-$brand-radius: 		6px !default;
-$grid-width:		1100px !default;
+/*---------------------------------------*\
+    COMMON VARIABLES
+\*---------------------------------------*/
 
-$base-font-size:    16px !default;
-$base-line-height:  24px !default;
+$grid-width:		1100px;
 
-$fa-css-prefix: icon;
-$fa-font-path: "../components/fontawesome/fonts";
+$base-font-size:    16px;
+$base-line-height:  24px;
 
-$vr-rem-ie8-fallback: false;
+$primary-color:    	#00a8e0;
+$font-color:       	#111111;
+$gray-color:       	#AAAAAA;
+$success-color: 	#368A55;
+$warning-color: 	#DBBC0D;
+$error-color: 		#CF2A0E;
+
+$base-radius: 		6px;
+
+$endable-hypens:	true;
+
+/*---------------------------------------*\
+    COMPONENT: VERTICAL RYTHM VARIABLES
+\*---------------------------------------*/
+
+// $vr-use-rem:            true;
+// $vr-rem-ie8-fallback:   false;
+// $vr-use-gradient:       false;
+// $vr-grid-color:         #6AC8FF;
+
+// $vr-line-height:  strip-unit($base-line-height);
+// $vr-font-size:    strip-unit($base-font-size);
+
+// $vr-headings: ("h1, .alpha", "h2, .beta", "h3, .gamma", "h4, .delta", "h5, .epsilon", "h6, .zeta"),
+//               ( 36,           30,          24,           21,           18,             16);
+
+
+/*---------------------------------------*\
+    VENDOR: FONT AWESOME VARIABLES
+\*---------------------------------------*/
+
+$fa-css-prefix:	icon;
+$fa-font-path:  "../components/fontawesome/fonts";

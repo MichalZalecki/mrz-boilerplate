@@ -1,22 +1,6 @@
-/*------------------------------------*\
+/*---------------------------------------*\
     FORMS
-\*------------------------------------*/
-
-/*
- *  Mixins
- */
-
-@mixin input-variation($color) {
-    border-color: $color;
-    background-color: lighten($color, 50%);
-    &:focus {
-        box-shadow: inset $base-line-height/4 0 0 0 $color;
-    }
-}
-
-/*
- *  Styles
- */
+\*---------------------------------------*/
 
 input[type="text"],
 input[type="password"],

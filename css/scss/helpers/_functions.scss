@@ -1,3 +1,19 @@
-/*------------------------------------*\
-    FUNCTIONS
-\*------------------------------------*/
+/*---------------------------------------*\
+    COMMON FUNCTIONS
+\*---------------------------------------*/
+
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+/*---------------------------------------*\
+    EM/REM FUNCTIONS
+\*---------------------------------------*/
+
+@function em($target, $context: $base-font-size) {
+    @return ($target / $context) * 1em;
+}
+
+@function rem($target) {
+    @return strip-unit($target) / 10 * 1rem;
+}

@@ -41,7 +41,7 @@ module.exports = function(grunt) {
     uncss: {
        dist: {
           options: {
-             ignore: [/js-.+/, '.added-at-runtime'],
+             ignore: [/js-.+/, '.added-at-runtime', /:first-letter/],
              stylesheets: ['css/style.css']
           },
           files: {

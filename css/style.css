@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/*------------------------------------*\
+/*---------------------------------------*\
     INCLUDES
-\*------------------------------------*/
+\*---------------------------------------*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -440,21 +440,44 @@ th {
   padding: 0;
 }
 
-/*------------------------------------*\
-    FUNCTIONS
-\*------------------------------------*/
-/*------------------------------------*\
-    EM/REM MIXINS
-\*------------------------------------*/
-/*------------------------------------*\
+/*---------------------------------------*\
+    COMMON VARIABLES
+\*---------------------------------------*/
+/*---------------------------------------*\
+    COMPONENT: VERTICAL RYTHM VARIABLES
+\*---------------------------------------*/
+/*---------------------------------------*\
+    VENDOR: FONT AWESOME VARIABLES
+\*---------------------------------------*/
+/*---------------------------------------*\
+    COMMON FUNCTIONS
+\*---------------------------------------*/
+/*---------------------------------------*\
+    EM/REM FUNCTIONS
+\*---------------------------------------*/
+/*---------------------------------------*\
     UTILITIES MIXINS
-\*------------------------------------*/
-/*------------------------------------*\
-    CSS3 MIXINS (autoprefixer instead)
-\*------------------------------------*/
-/*------------------------------------*\
+\*---------------------------------------*/
+/*---------------------------------------*\
+    CSS3 MIXINS
+
+    Those are not used as is by
+    MRZ Boilerplate because of
+    autoprefixer (as Grunt.js taks) is
+    used instead.
+\*---------------------------------------*/
+/*---------------------------------------*\
+    COMPONENT: INPUTS MIXINS
+\*---------------------------------------*/
+/*---------------------------------------*\
+    COMPONENT: BUTTONS MIXINS
+\*---------------------------------------*/
+/*---------------------------------------*\
+    COMPONENT: VERTICAL RYTHM MIXINS
+\*---------------------------------------*/
+/*---------------------------------------*\
     BASICS
-\*------------------------------------*/
+\*---------------------------------------*/
 /* line 5, scss/base/_basics.scss */
 *,
 *:before,
@@ -470,105 +493,122 @@ img {
   vertical-align: middle;
 }
 
-/*------------------------------------*\
+/*---------------------------------------*\
     VERTICAL RYTHM
-\*------------------------------------*/
+\*---------------------------------------*/
 /*
- *  Functions
+ * Defaults Variables
  */
 /*
- *  Variables
+ * Styles
  */
-/*
- *  Mixins
- */
-/*
- *  Styles
- */
-/* line 52, scss/base/_vertical-rythm.scss */
+/* line 24, scss/base/_vertical-rythm.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 70, scss/base/_vertical-rythm.scss */
+/* line 42, scss/base/_vertical-rythm.scss */
 body {
+  font-size: 16px;
+  line-height: 24px;
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
-/* line 89, scss/base/_vertical-rythm.scss */
+/* line 61, scss/base/_vertical-rythm.scss */
 h1, .alpha, h2, .beta, h3, .gamma, h4, .delta, h5, .epsilon, h6, .zeta {
   margin: 0;
 }
 
-/* line 94, scss/base/_vertical-rythm.scss */
+/* line 66, scss/base/_vertical-rythm.scss */
 h1, .alpha {
+  font-size: 36px;
+  line-height: 48px;
   font-size: 3.6rem;
   line-height: 4.8rem;
+  margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 94, scss/base/_vertical-rythm.scss */
+/* line 66, scss/base/_vertical-rythm.scss */
 h2, .beta {
+  font-size: 30px;
+  line-height: 48px;
   font-size: 3rem;
   line-height: 4.8rem;
+  margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 94, scss/base/_vertical-rythm.scss */
+/* line 66, scss/base/_vertical-rythm.scss */
 h3, .gamma {
+  font-size: 24px;
+  line-height: 24px;
   font-size: 2.4rem;
   line-height: 2.4rem;
+  margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 94, scss/base/_vertical-rythm.scss */
+/* line 66, scss/base/_vertical-rythm.scss */
 h4, .delta {
+  font-size: 21px;
+  line-height: 24px;
   font-size: 2.1rem;
   line-height: 2.4rem;
+  margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 94, scss/base/_vertical-rythm.scss */
+/* line 66, scss/base/_vertical-rythm.scss */
 h5, .epsilon {
+  font-size: 18px;
+  line-height: 24px;
   font-size: 1.8rem;
   line-height: 2.4rem;
+  margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 94, scss/base/_vertical-rythm.scss */
+/* line 66, scss/base/_vertical-rythm.scss */
 h6, .zeta {
+  font-size: 16px;
+  line-height: 24px;
   font-size: 1.6rem;
   line-height: 2.4rem;
+  margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 118, scss/base/_vertical-rythm.scss */
+/* line 90, scss/base/_vertical-rythm.scss */
 .vr-mb0 {
   margin-bottom: 0;
 }
 
-/* line 122, scss/base/_vertical-rythm.scss */
+/* line 94, scss/base/_vertical-rythm.scss */
 .vr-mb1 {
+  margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 126, scss/base/_vertical-rythm.scss */
+/* line 98, scss/base/_vertical-rythm.scss */
 .vr-mb2 {
+  margin-bottom: 48px;
   margin-bottom: 4.8rem;
 }
 
-/* line 130, scss/base/_vertical-rythm.scss */
+/* line 102, scss/base/_vertical-rythm.scss */
 p,
 blockquote,
 ul,
 ol,
 dl {
   margin: 0;
+  margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 141, scss/base/_vertical-rythm.scss */
+/* line 113, scss/base/_vertical-rythm.scss */
 ul ul,
 ul ol,
 ol ul,
@@ -576,20 +616,22 @@ ol ol {
   margin-bottom: 0;
 }
 
-/* line 147, scss/base/_vertical-rythm.scss */
+/* line 119, scss/base/_vertical-rythm.scss */
 dd {
+  margin-left: 36px;
   margin-left: 3.6rem;
 }
 
-/* line 158, scss/base/_vertical-rythm.scss */
+/* line 130, scss/base/_vertical-rythm.scss */
 ul,
 ol {
+  padding-left: 48px;
   padding-left: 4.8rem;
 }
 
-/*------------------------------------*\
+/*---------------------------------------*\
     TYPOGRAPHY
-\*------------------------------------*/
+\*---------------------------------------*/
 /* line 5, scss/base/_typography.scss */
 body {
   color: #111111;
@@ -608,7 +650,7 @@ h6, .zeta {
 
 /* line 19, scss/base/_typography.scss */
 a {
-  color: #00A8E0;
+  color: #00a8e0;
   text-decoration: none;
 }
 /* line 22, scss/base/_typography.scss */
@@ -632,7 +674,7 @@ a.underline:after {
           transform: translateY(4px);
   -webkit-transition: all .3s;
           transition: all .3s;
-  background-color: #00A8E0;
+  background-color: #00a8e0;
   content: "";
   display: block;
   height: 2px;
@@ -660,10 +702,10 @@ p {
           hyphens: auto;
 }
 
-/*------------------------------------*\
+/*---------------------------------------*\
     UTILITIES CLASSES
-\*------------------------------------*/
-/* line 23, scss/helpers/_mixins.scss */
+\*---------------------------------------*/
+/* line 11, scss/helpers/_mixins.scss */
 .group:after,
 .clearfix:after {
   clear: both;
@@ -767,16 +809,10 @@ p {
   background: rgba(0, 0, 0, 0.1);
 }
 
-/*------------------------------------*\
+/*---------------------------------------*\
     FORMS
-\*------------------------------------*/
-/*
- *  Mixins
- */
-/*
- *  Styles
- */
-/* line 21, scss/components/_inputs.scss */
+\*---------------------------------------*/
+/* line 5, scss/components/_inputs.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -805,7 +841,7 @@ textarea {
   vertical-align: top;
   width: 100%;
 }
-/* line 47, scss/components/_inputs.scss */
+/* line 31, scss/components/_inputs.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
@@ -822,7 +858,7 @@ input[type="url"]:focus,
 textarea:focus {
   box-shadow: inset 6px 0 0 0 #AAAAAA;
 }
-/* line 50, scss/components/_inputs.scss */
+/* line 34, scss/components/_inputs.scss */
 input[type="text"].input--primary,
 input[type="password"].input--primary,
 input[type="date"].input--primary,
@@ -837,10 +873,10 @@ input[type="tel"].input--primary,
 input[type="time"].input--primary,
 input[type="url"].input--primary,
 textarea.input--primary {
-  border-color: #00A8E0;
+  border-color: #00a8e0;
   background-color: #e0f7ff;
 }
-/* line 12, scss/components/_inputs.scss */
+/* line 110, scss/helpers/_mixins.scss */
 input[type="text"].input--primary:focus,
 input[type="password"].input--primary:focus,
 input[type="date"].input--primary:focus,
@@ -855,9 +891,9 @@ input[type="tel"].input--primary:focus,
 input[type="time"].input--primary:focus,
 input[type="url"].input--primary:focus,
 textarea.input--primary:focus {
-  box-shadow: inset 6px 0 0 0 #00A8E0;
+  box-shadow: inset 6px 0 0 0 #00a8e0;
 }
-/* line 53, scss/components/_inputs.scss */
+/* line 37, scss/components/_inputs.scss */
 input[type="text"].input--success,
 input[type="password"].input--success,
 input[type="date"].input--success,
@@ -875,7 +911,7 @@ textarea.input--success {
   border-color: #368A55;
   background-color: #d2eddc;
 }
-/* line 12, scss/components/_inputs.scss */
+/* line 110, scss/helpers/_mixins.scss */
 input[type="text"].input--success:focus,
 input[type="password"].input--success:focus,
 input[type="date"].input--success:focus,
@@ -892,7 +928,7 @@ input[type="url"].input--success:focus,
 textarea.input--success:focus {
   box-shadow: inset 6px 0 0 0 #368A55;
 }
-/* line 56, scss/components/_inputs.scss */
+/* line 40, scss/components/_inputs.scss */
 input[type="text"].input--warning,
 input[type="password"].input--warning,
 input[type="date"].input--warning,
@@ -910,7 +946,7 @@ textarea.input--warning {
   border-color: #DBBC0D;
   background-color: #fefbe9;
 }
-/* line 12, scss/components/_inputs.scss */
+/* line 110, scss/helpers/_mixins.scss */
 input[type="text"].input--warning:focus,
 input[type="password"].input--warning:focus,
 input[type="date"].input--warning:focus,
@@ -927,7 +963,7 @@ input[type="url"].input--warning:focus,
 textarea.input--warning:focus {
   box-shadow: inset 6px 0 0 0 #DBBC0D;
 }
-/* line 59, scss/components/_inputs.scss */
+/* line 43, scss/components/_inputs.scss */
 input[type="text"].input--error,
 input[type="password"].input--error,
 input[type="date"].input--error,
@@ -945,7 +981,7 @@ textarea.input--error {
   border-color: #CF2A0E;
   background-color: #fde3df;
 }
-/* line 12, scss/components/_inputs.scss */
+/* line 110, scss/helpers/_mixins.scss */
 input[type="text"].input--error:focus,
 input[type="password"].input--error:focus,
 input[type="date"].input--error:focus,
@@ -963,21 +999,20 @@ textarea.input--error:focus {
   box-shadow: inset 6px 0 0 0 #CF2A0E;
 }
 
-/* line 64, scss/components/_inputs.scss */
+/* line 48, scss/components/_inputs.scss */
 textarea {
   resize: vertical;
 }
 
-/*------------------------------------*\
+/*---------------------------------------*\
     BUTTONS
-\*------------------------------------*/
+\*---------------------------------------*/
 /* line 5, scss/components/_buttons.scss */
-.btn,
-.button {
-  -webkit-transition: background-color .3s;
-          transition: background-color .3s;
+.btn {
+  background-color: #00a8e0;
+  -webkit-transition: border-color .3s, background-color .3s;
+          transition: border-color .3s, background-color .3s;
   display: inline-block;
-  background-color: #00A8E0;
   border: none;
   cursor: pointer;
   display: inline-block;
@@ -991,72 +1026,172 @@ textarea {
   vertical-align: middle;
   white-space: nowrap;
 }
-/* line 22, scss/components/_buttons.scss */
-.btn i,
-.button i {
+/* line 121, scss/helpers/_mixins.scss */
+.btn:hover, .btn:focus {
+  background-color: #0082ad;
+}
+/* line 125, scss/helpers/_mixins.scss */
+.btn:active {
+  background-color: #005c7a;
+}
+/* line 21, scss/components/_buttons.scss */
+.btn > i {
   margin: 0 .5rem;
 }
-/* line 25, scss/components/_buttons.scss */
-.btn, .btn:hover, .btn:focus, .btn:active,
-.button,
-.button:hover,
-.button:focus,
-.button:active {
+/* line 24, scss/components/_buttons.scss */
+.btn, .btn:hover, .btn:focus, .btn:active {
   color: white;
   text-decoration: none;
 }
-/* line 32, scss/components/_buttons.scss */
-.btn:hover, .btn:focus,
-.button:hover,
-.button:focus {
-  background-color: #0082ad;
+/* line 31, scss/components/_buttons.scss */
+.btn--success {
+  background-color: #368A55;
 }
-/* line 36, scss/components/_buttons.scss */
-.btn:active,
-.button:active {
-  background-color: #005c7a;
+/* line 121, scss/helpers/_mixins.scss */
+.btn--success:hover, .btn--success:focus {
+  background-color: #28653e;
 }
-/* line 39, scss/components/_buttons.scss */
-.btn--radius,
-.button--radius {
+/* line 125, scss/helpers/_mixins.scss */
+.btn--success:active {
+  background-color: #194128;
+}
+/* line 34, scss/components/_buttons.scss */
+.btn--warning {
+  background-color: #DBBC0D;
+}
+/* line 121, scss/helpers/_mixins.scss */
+.btn--warning:hover, .btn--warning:focus {
+  background-color: #ab930a;
+}
+/* line 125, scss/helpers/_mixins.scss */
+.btn--warning:active {
+  background-color: #7b6907;
+}
+/* line 37, scss/components/_buttons.scss */
+.btn--error {
+  background-color: #CF2A0E;
+}
+/* line 121, scss/helpers/_mixins.scss */
+.btn--error:hover, .btn--error:focus {
+  background-color: #9f200b;
+}
+/* line 125, scss/helpers/_mixins.scss */
+.btn--error:active {
+  background-color: #6f1708;
+}
+/* line 40, scss/components/_buttons.scss */
+.btn--radius {
   border-radius: 6px;
 }
-/* line 42, scss/components/_buttons.scss */
-.btn--round,
-.button--round {
+/* line 43, scss/components/_buttons.scss */
+.btn--round {
   border-radius: 36px;
 }
-/* line 45, scss/components/_buttons.scss */
-.btn--ghost,
-.button--ghost {
-  background-color: transparent;
-  border: 2px solid #00A8E0;
-  color: #00A8E0;
-  line-height: 32px;
-}
-/* line 50, scss/components/_buttons.scss */
-.btn--ghost:hover, .btn--ghost:focus,
-.button--ghost:hover,
-.button--ghost:focus {
-  border-color: #0082ad;
-}
-/* line 54, scss/components/_buttons.scss */
-.btn--ghost:active,
-.button--ghost:active {
-  border-color: #005c7a;
-}
-/* line 58, scss/components/_buttons.scss */
-.btn--3d,
-.button--3d {
+/* line 46, scss/components/_buttons.scss */
+.btn--3d {
   box-shadow: 0 4px 0 0 #003547;
 }
-/* line 60, scss/components/_buttons.scss */
-.btn--3d:active,
-.button--3d:active {
+/* line 147, scss/helpers/_mixins.scss */
+.btn--3d:active {
+  box-shadow: 0 2px 0 0 #003547;
+}
+/* line 48, scss/components/_buttons.scss */
+.btn--3d:active {
   -webkit-transform: translateY(2px);
       -ms-transform: translateY(2px);
           transform: translateY(2px);
-  box-shadow: 0 2px 0 0 #003547;
+}
+/* line 51, scss/components/_buttons.scss */
+.btn--3d.btn--success {
+  box-shadow: 0 4px 0 0 #0b1c11;
+}
+/* line 147, scss/helpers/_mixins.scss */
+.btn--3d.btn--success:active {
+  box-shadow: 0 2px 0 0 #0b1c11;
+}
+/* line 54, scss/components/_buttons.scss */
+.btn--3d.btn--warning {
+  box-shadow: 0 4px 0 0 #4b4004;
+}
+/* line 147, scss/helpers/_mixins.scss */
+.btn--3d.btn--warning:active {
+  box-shadow: 0 2px 0 0 #4b4004;
+}
+/* line 57, scss/components/_buttons.scss */
+.btn--3d.btn--error {
+  box-shadow: 0 4px 0 0 #400d04;
+}
+/* line 147, scss/helpers/_mixins.scss */
+.btn--3d.btn--error:active {
+  box-shadow: 0 2px 0 0 #400d04;
+}
+/* line 61, scss/components/_buttons.scss */
+.btn--ghost {
+  border-color: #00a8e0;
+  color: #00a8e0;
+  background-color: transparent;
+  line-height: 32px;
+  border-width: 2px;
+  border-style: solid;
+}
+/* line 133, scss/helpers/_mixins.scss */
+.btn--ghost:hover, .btn--ghost:focus {
+  color: white;
+  border-color: #00a8e0;
+  background-color: #00a8e0;
+}
+/* line 139, scss/helpers/_mixins.scss */
+.btn--ghost:active {
+  border-color: #0082ad;
+  background-color: #0082ad;
+}
+/* line 67, scss/components/_buttons.scss */
+.btn--ghost.btn--success {
+  border-color: #368A55;
+  color: #368A55;
+}
+/* line 133, scss/helpers/_mixins.scss */
+.btn--ghost.btn--success:hover, .btn--ghost.btn--success:focus {
+  color: white;
+  border-color: #368A55;
+  background-color: #368A55;
+}
+/* line 139, scss/helpers/_mixins.scss */
+.btn--ghost.btn--success:active {
+  border-color: #28653e;
+  background-color: #28653e;
+}
+/* line 70, scss/components/_buttons.scss */
+.btn--ghost.btn--warning {
+  border-color: #DBBC0D;
+  color: #DBBC0D;
+}
+/* line 133, scss/helpers/_mixins.scss */
+.btn--ghost.btn--warning:hover, .btn--ghost.btn--warning:focus {
+  color: white;
+  border-color: #DBBC0D;
+  background-color: #DBBC0D;
+}
+/* line 139, scss/helpers/_mixins.scss */
+.btn--ghost.btn--warning:active {
+  border-color: #ab930a;
+  background-color: #ab930a;
+}
+/* line 73, scss/components/_buttons.scss */
+.btn--ghost.btn--error {
+  border-color: #CF2A0E;
+  color: #CF2A0E;
+}
+/* line 133, scss/helpers/_mixins.scss */
+.btn--ghost.btn--error:hover, .btn--ghost.btn--error:focus {
+  color: white;
+  border-color: #CF2A0E;
+  background-color: #CF2A0E;
+}
+/* line 139, scss/helpers/_mixins.scss */
+.btn--ghost.btn--error:active {
+  border-color: #9f200b;
+  background-color: #9f200b;
 }
 
 /* line 1, scss/components/_tables.scss */
@@ -1107,12 +1242,13 @@ td {
   background-color: #dddddd;
 }
 
-/*------------------------------------*\
+/*---------------------------------------*\
     HR
-\*------------------------------------*/
+\*---------------------------------------*/
 /* line 5, scss/components/_hr.scss */
 hr {
   margin: 0;
+  margin-bottom: 24px;
   margin-bottom: 2.4rem;
   background: #AAAAAA;
   border: 0;
@@ -1126,9 +1262,9 @@ hr {
   background-image: linear-gradient(90deg, #dddddd, #AAAAAA, #dddddd);
 }
 
-/*------------------------------------*\
+/*---------------------------------------*\
     INPUT BUTTON INLINE
-\*------------------------------------*/
+\*---------------------------------------*/
 /* line 5, scss/components/_in-btn-inline.scss */
 .in-btn-inline {
   display: -webkit-flex;
@@ -1148,9 +1284,9 @@ hr {
           flex: 1 auto;
 }
 
-/*------------------------------------*\
+/*---------------------------------------*\
     INITIAL
-\*------------------------------------*/
+\*---------------------------------------*/
 /* line 6, scss/components/_initial.scss */
 .initial:first-letter {
   float: left;
