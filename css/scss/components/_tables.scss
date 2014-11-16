@@ -1,3 +1,7 @@
+/*---------------------------------------*\
+    TABLES
+\*---------------------------------------*/
+
 table {
 	border-collapse: separate;
 	border-spacing: 0;
@@ -36,4 +40,10 @@ td {
 
 .table--zebra tr:nth-child(even) {
 	background-color: lighten($gray-color, 20%);
+}
+
+.table-wrap {
+	@media screen and (max-width: 480px) {
+		overflow-x: scroll;
+	}
 }
