@@ -843,7 +843,6 @@ textarea {
   margin: 0 0 12px;
   outline: none;
   padding: 0 1rem;
-  text-transform: uppercase;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -861,13 +860,13 @@ textarea {
   background-color: #005c7a;
 }
 
-/* line 21, scss/components/_buttons.scss */
+/* line 20, scss/components/_buttons.scss */
 
 .btn > i {
   margin: 0 .5rem;
 }
 
-/* line 24, scss/components/_buttons.scss */
+/* line 23, scss/components/_buttons.scss */
 
 .btn,
 .btn:hover,
@@ -877,7 +876,7 @@ textarea {
   text-decoration: none;
 }
 
-/* line 31, scss/components/_buttons.scss */
+/* line 30, scss/components/_buttons.scss */
 
 .btn--success {
   background-color: #368A55;
@@ -896,7 +895,7 @@ textarea {
   background-color: #194128;
 }
 
-/* line 34, scss/components/_buttons.scss */
+/* line 33, scss/components/_buttons.scss */
 
 .btn--warning {
   background-color: #DBBC0D;
@@ -915,7 +914,7 @@ textarea {
   background-color: #7b6907;
 }
 
-/* line 37, scss/components/_buttons.scss */
+/* line 36, scss/components/_buttons.scss */
 
 .btn--error {
   background-color: #CF2A0E;
@@ -934,19 +933,19 @@ textarea {
   background-color: #6f1708;
 }
 
-/* line 40, scss/components/_buttons.scss */
+/* line 39, scss/components/_buttons.scss */
 
 .btn--radius {
   border-radius: 6px;
 }
 
-/* line 43, scss/components/_buttons.scss */
+/* line 42, scss/components/_buttons.scss */
 
 .btn--round {
   border-radius: 36px;
 }
 
-/* line 46, scss/components/_buttons.scss */
+/* line 45, scss/components/_buttons.scss */
 
 .btn--3d {
   box-shadow: 0 4px 0 0 #003547;
@@ -958,7 +957,7 @@ textarea {
   box-shadow: 0 2px 0 0 #003547;
 }
 
-/* line 48, scss/components/_buttons.scss */
+/* line 47, scss/components/_buttons.scss */
 
 .btn--3d:active {
   -webkit-transform: translateY(2px);
@@ -966,7 +965,7 @@ textarea {
   transform: translateY(2px);
 }
 
-/* line 51, scss/components/_buttons.scss */
+/* line 50, scss/components/_buttons.scss */
 
 .btn--3d.btn--success {
   box-shadow: 0 4px 0 0 #0b1c11;
@@ -978,7 +977,7 @@ textarea {
   box-shadow: 0 2px 0 0 #0b1c11;
 }
 
-/* line 54, scss/components/_buttons.scss */
+/* line 53, scss/components/_buttons.scss */
 
 .btn--3d.btn--warning {
   box-shadow: 0 4px 0 0 #4b4004;
@@ -990,7 +989,7 @@ textarea {
   box-shadow: 0 2px 0 0 #4b4004;
 }
 
-/* line 57, scss/components/_buttons.scss */
+/* line 56, scss/components/_buttons.scss */
 
 .btn--3d.btn--error {
   box-shadow: 0 4px 0 0 #400d04;
@@ -1002,7 +1001,7 @@ textarea {
   box-shadow: 0 2px 0 0 #400d04;
 }
 
-/* line 61, scss/components/_buttons.scss */
+/* line 60, scss/components/_buttons.scss */
 
 .btn--ghost {
   border-color: #00a8e0;
@@ -1029,7 +1028,7 @@ textarea {
   background-color: #0082ad;
 }
 
-/* line 67, scss/components/_buttons.scss */
+/* line 66, scss/components/_buttons.scss */
 
 .btn--ghost.btn--success {
   border-color: #368A55;
@@ -1052,7 +1051,7 @@ textarea {
   background-color: #28653e;
 }
 
-/* line 70, scss/components/_buttons.scss */
+/* line 69, scss/components/_buttons.scss */
 
 .btn--ghost.btn--warning {
   border-color: #DBBC0D;
@@ -1075,7 +1074,7 @@ textarea {
   background-color: #ab930a;
 }
 
-/* line 73, scss/components/_buttons.scss */
+/* line 72, scss/components/_buttons.scss */
 
 .btn--ghost.btn--error {
   border-color: #CF2A0E;
