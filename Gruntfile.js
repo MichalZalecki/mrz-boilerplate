@@ -1,8 +1,6 @@
 /*global module:false*/
 module.exports = function(grunt) {
 
-  var style_tasks = ['sass', 'autoprefixer', 'uncss', 'cssmin'];
-
   // Project configuration.
   grunt.initConfig({
     // Metadata.
@@ -39,7 +37,7 @@ module.exports = function(grunt) {
       }
     },
     uncss: {
-       dist: {
+       prod: {
           options: {
              ignore: [/js-.+/, '.added-at-runtime', /:first-letter/],
              stylesheets: ['css/style.css']
@@ -71,15 +69,14 @@ module.exports = function(grunt) {
       },
       styles: {
         files: ['css/scss/**/*.scss'],
-        tasks: style_tasks
+        tasks: ['sass:dev', 'autoprefixer:dev']
       },
       configFiles: {
         files: ['Gruntfile.js', 'package.json'],
-        tasks: style_tasks
+        tasks: ['sass:dev', 'autoprefixer:dev']
       },
       html: {
-        files: ['*.html'],
-        tasks: ['uncss']
+        files: ['*.html']
       }
     }
   });
@@ -91,6 +88,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-uncss');
 
   // Default task.
-  grunt.registerTask('default', style_tasks);
+  grunt.registerTask('prod', ['uncss:prod', 'cssmin:prod']);
+  grunt.registerTask('dev', ['sass:dev', 'autoprefixer:dev', 'watch']);
 
 };

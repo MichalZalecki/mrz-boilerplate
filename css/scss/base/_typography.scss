@@ -14,6 +14,10 @@ h4, .delta,
 h5, .epsilon,
 h6, .zeta {
 	font-family: 'Roboto Slab', serif;
+	small {
+		color: $gray-color;
+		font-size: .7em;
+	}
 }
 
 a {

@@ -1,0 +1,20 @@
+/*---------------------------------------*\
+    SNAPSHOT
+\*---------------------------------------*/
+
+.snapshot {
+	border: 1px solid $gray-color;
+	display: inline-block;
+	margin: 0 0 $base-line-height;
+	padding: $base-line-height/4;
+	&.left {
+		margin-right: $base-line-height;
+	}
+	&.right {
+		margin-left: $base-line-height;
+	}
+	figcaption {
+		margin: $base-line-height/4 $base-line-height/4 0;
+		text-align: center;
+	}
+}

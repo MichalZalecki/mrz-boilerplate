@@ -40,10 +40,16 @@ You need have Node.js and Bower installed already.
 To run tasks (you need have installed Grunt) run:
 
 ```sh
-grunt watch
+grunt dev
 ```
 
-in root project directory.
+for production tasks run:
+
+```sh
+grunt prod
+```
+
+Notice that prod task hasn't watch task included.
 
 ###Demo
 

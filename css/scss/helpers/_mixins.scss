@@ -21,6 +21,22 @@
 }
 
 /*---------------------------------------*\
+    BREAKPOINT MIXIN
+\*---------------------------------------*/
+
+@mixin breakpoint($point, $mobile-first: true) {
+    @if $mobile-first {
+        @media (min-width: #{$point}) {
+            @content;
+        }
+    } @else {
+        @media (max-width: #{$point}) {
+            @content;
+        }
+    }
+}
+
+/*---------------------------------------*\
     CSS3 MIXINS
 
     Those are not used as is by
