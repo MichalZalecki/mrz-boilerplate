@@ -718,6 +718,11 @@ p {
 /*---------------------------------------*\
     UTILITIES CLASSES
 \*---------------------------------------*/
+/* line 5, scss/helpers/_utilities.scss */
+.primary {
+  color: #00a8e0;
+}
+
 /* line 11, scss/helpers/_mixins.scss */
 .group:after,
 .clearfix:after {
@@ -726,97 +731,97 @@ p {
   display: table;
 }
 
-/* line 10, scss/helpers/_utilities.scss */
+/* line 14, scss/helpers/_utilities.scss */
 .inline {
   display: inline;
 }
 
-/* line 14, scss/helpers/_utilities.scss */
+/* line 18, scss/helpers/_utilities.scss */
 .block {
   display: block;
 }
 
-/* line 18, scss/helpers/_utilities.scss */
+/* line 22, scss/helpers/_utilities.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 22, scss/helpers/_utilities.scss */
+/* line 26, scss/helpers/_utilities.scss */
 .overflow-hidden {
   overflow: hidden;
 }
 
-/* line 26, scss/helpers/_utilities.scss */
+/* line 30, scss/helpers/_utilities.scss */
 .left {
   float: left;
 }
 
-/* line 30, scss/helpers/_utilities.scss */
+/* line 34, scss/helpers/_utilities.scss */
 .right {
   float: right;
 }
 
-/* line 34, scss/helpers/_utilities.scss */
+/* line 38, scss/helpers/_utilities.scss */
 .fit {
   max-width: 100%;
 }
 
-/* line 38, scss/helpers/_utilities.scss */
+/* line 42, scss/helpers/_utilities.scss */
 .half-width {
   width: 50%;
 }
 
-/* line 42, scss/helpers/_utilities.scss */
+/* line 46, scss/helpers/_utilities.scss */
 .full-width {
   width: 100%;
 }
 
-/* line 46, scss/helpers/_utilities.scss */
+/* line 50, scss/helpers/_utilities.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 50, scss/helpers/_utilities.scss */
+/* line 54, scss/helpers/_utilities.scss */
 .regular {
   font-weight: normal;
 }
 
-/* line 54, scss/helpers/_utilities.scss */
+/* line 58, scss/helpers/_utilities.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 58, scss/helpers/_utilities.scss */
+/* line 62, scss/helpers/_utilities.scss */
 .caps {
   text-transform: uppercase;
 }
 
-/* line 62, scss/helpers/_utilities.scss */
+/* line 66, scss/helpers/_utilities.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 66, scss/helpers/_utilities.scss */
+/* line 70, scss/helpers/_utilities.scss */
 .center {
   text-align: center;
 }
 
-/* line 70, scss/helpers/_utilities.scss */
+/* line 74, scss/helpers/_utilities.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 74, scss/helpers/_utilities.scss */
+/* line 78, scss/helpers/_utilities.scss */
 .justified {
   text-align: justify;
 }
 
-/* line 78, scss/helpers/_utilities.scss */
+/* line 82, scss/helpers/_utilities.scss */
 .nowrap {
   white-space: nowrap;
 }
 
-/* line 82, scss/helpers/_utilities.scss */
+/* line 86, scss/helpers/_utilities.scss */
 .gray-box {
   margin-bottom: 2.4rem;
   background: rgba(0, 0, 0, 0.1);

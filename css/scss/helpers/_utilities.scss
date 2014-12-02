@@ -2,6 +2,10 @@
     UTILITIES CLASSES
 \*---------------------------------------*/
 
+.primary {
+    color: $primary-color;
+}
+
 .group,
 .clearfix {
 	@include group;
