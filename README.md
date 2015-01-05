@@ -1,9 +1,6 @@
-MRZ Boilerplate
-====================
+# MRZ Boilerplate
 
-[![forthebadge](http://forthebadge.com/badges/uses-html.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/badges/uses-css.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/badges/uses-badges.svg)](http://forthebadge.com)
 
 Minimal CSS(SCSS) starter kit with pre-configured Grunt.js tasks for better performance and optimalization.
 
@@ -21,7 +18,7 @@ Minimal CSS(SCSS) starter kit with pre-configured Grunt.js tasks for better perf
   * cssmin - minify CSS files
   * watch - watch for files changes + livereload
 
-###Install dependencies
+## Install dependencies
 Don't forget to install required dependencies via npm and bower. To do this run:
 
 ```sh
@@ -36,7 +33,7 @@ bower install
 
 You need have Node.js and Bower installed already.
 
-###Run tasks
+## Run tasks
 To run tasks (you need have installed Grunt) run:
 
 ```sh
@@ -51,6 +48,6 @@ grunt prod
 
 Notice that prod task hasn't watch task included.
 
-###Demo
+## Demo
 
 Demo is available at: http://demo.michal.zalecki.pl/mrz-boilerplate

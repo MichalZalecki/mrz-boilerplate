@@ -7,6 +7,7 @@
 	display: inline-block;
 	margin: 0 0 $base-line-height;
 	padding: $base-line-height/4;
+	max-width: 100%;
 	&.left {
 		margin-right: $base-line-height;
 	}

@@ -20,9 +20,9 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'css/scss',
+          cwd: 'app/css/scss',
           src: ['**/*.scss'],
-          dest: 'css',
+          dest: 'app/css',
           ext: '.css'
         }]
       }
@@ -33,17 +33,17 @@ module.exports = function(grunt) {
         map: true
       },
       dev: {
-        src: ['css/**/*.css', '!css/**/*.min.css']
+        src: ['app/css/**/*.css', '!app/css/**/*.min.css']
       }
     },
     uncss: {
        prod: {
           options: {
              ignore: [/js-.+/, '.added-at-runtime', /:first-letter/],
-             stylesheets: ['css/style.css']
+             stylesheets: ['app/css/style.css']
           },
           files: {
-             'css/tidy.css': ['index.html']
+             'app/css/tidy.css': ['index.html']
           }
        }
     },
@@ -55,9 +55,9 @@ module.exports = function(grunt) {
       prod: {
         files: [{
           expand: true,
-          cwd: 'css/',
+          cwd: 'app/css/',
           src: ['*.css', '!*.min.css'],
-          dest: 'css/',
+          dest: 'app/css/',
           ext: '.min.css'
         }]
       }
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
         interrupt: true
       },
       styles: {
-        files: ['css/scss/**/*.scss'],
+        files: ['app/css/scss/**/*.scss'],
         tasks: ['sass:dev', 'autoprefixer:dev']
       },
       configFiles: {
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         tasks: ['sass:dev', 'autoprefixer:dev']
       },
       html: {
-        files: ['*.html']
+        files: ['app/*.html']
       }
     }
   });
