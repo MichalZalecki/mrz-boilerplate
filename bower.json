@@ -1,6 +1,6 @@
 {
   "name": "mrz-boilerplate",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/MichalZalecki/mrz-boilerplate",
   "authors": [
     "Michal Zalecki <michal@michalzalecki.com>"
@@ -24,7 +24,8 @@
     "tests"
   ],
   "dependencies": {
-    "fontawesome": "~4.2.0",
-    "normalize.css": "~3.0.2"
+    "fontawesome": "~4.3.0",
+    "normalize.css": "~3.0.2",
+    "flexboxgrid": "~6.2.0"
   }
 }

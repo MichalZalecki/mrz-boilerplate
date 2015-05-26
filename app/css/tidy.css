@@ -197,7 +197,6 @@ figure {
 /* line 211, scss/vendors/_normalize.scss */
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -455,7 +454,6 @@ th {
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1427,7 +1425,6 @@ hr {
 /* line 15, scss/vendors/_flexboxgrid.scss */
 
 .row {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1453,7 +1450,6 @@ hr {
 
 .col-xs-6,
 .col-xs-12 {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1572,7 +1568,6 @@ hr {
   .col-sm-10,
   .col-sm-11,
   .col-sm-12 {
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1929,7 +1924,7 @@ hr {
 }
 
 /*!
- *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 
@@ -1938,8 +1933,8 @@ hr {
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../components/fontawesome/fonts/fontawesome-webfont.eot?v=4.2.0");
-  src: url("../components/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../components/fontawesome/fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../components/fontawesome/fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../components/fontawesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  src: url("../components/fontawesome/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("../components/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../components/fontawesome/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../components/fontawesome/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../components/fontawesome/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../components/fontawesome/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1953,6 +1948,9 @@ hr {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 /* makes the font 33% larger relative to the icon container */
@@ -1987,7 +1985,9 @@ hr {
 
 /* line 15, ../bower_components/fontawesome/scss/_bordered-pulled.scss */
 
-/* line 4, ../bower_components/fontawesome/scss/_spinning.scss */
+/* line 4, ../bower_components/fontawesome/scss/_animated.scss */
+
+/* line 9, ../bower_components/fontawesome/scss/_animated.scss */
 
 @-webkit-keyframes fa-spin {
   0% {
@@ -2350,13 +2350,11 @@ hr {
   content: "";
 }
 
-/* line 162, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 163, ../bower_components/fontawesome/scss/_icons.scss */
 
 .icon-github:before {
   content: "";
 }
-
-/* line 163, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 164, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2400,25 +2398,25 @@ hr {
 
 /* line 184, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 186, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 185, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 188, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 187, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 189, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 190, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 192, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 191, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 194, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 193, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 195, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 197, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 196, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 198, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 201, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 199, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 202, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2440,11 +2438,11 @@ hr {
 
 /* line 211, ../bower_components/fontawesome/scss/_icons.scss */
 
+/* line 212, ../bower_components/fontawesome/scss/_icons.scss */
+
 .icon-google-plus:before {
   content: "";
 }
-
-/* line 212, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 213, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2458,33 +2456,33 @@ hr {
 
 /* line 218, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 220, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 219, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 222, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 221, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 224, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 223, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 225, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 226, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 228, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 227, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 230, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 229, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 232, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 231, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 233, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 234, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 236, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 235, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 237, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 238, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 240, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 239, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 241, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2546,7 +2544,7 @@ hr {
 
 /* line 270, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 272, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 271, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 273, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2558,7 +2556,7 @@ hr {
 
 /* line 277, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 279, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 278, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 280, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2584,9 +2582,9 @@ hr {
 
 /* line 291, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 293, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 292, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 296, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 294, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 297, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2594,7 +2592,7 @@ hr {
 
 /* line 299, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 301, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 300, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 302, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2670,27 +2668,27 @@ hr {
 
 /* line 338, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 340, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 339, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 342, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 341, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 344, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 343, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 346, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 345, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 347, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 349, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 348, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 351, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 350, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 355, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 352, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 358, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 356, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 360, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 359, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 362, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 361, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 363, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2770,8 +2768,6 @@ hr {
 
 /* line 401, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 402, ../bower_components/fontawesome/scss/_icons.scss */
-
 /* line 403, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 404, ../bower_components/fontawesome/scss/_icons.scss */
@@ -2792,17 +2788,17 @@ hr {
 
 /* line 412, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 414, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 413, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 415, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 414, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 416, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 417, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 419, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 418, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 420, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 419, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 421, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2814,11 +2810,11 @@ hr {
 
 /* line 425, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 428, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 426, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 427, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 430, ../bower_components/fontawesome/scss/_icons.scss */
-
-/* line 431, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 432, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2868,11 +2864,11 @@ hr {
 
 /* line 455, ../bower_components/fontawesome/scss/_icons.scss */
 
+/* line 456, ../bower_components/fontawesome/scss/_icons.scss */
+
 /* line 457, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 459, ../bower_components/fontawesome/scss/_icons.scss */
-
-/* line 460, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 461, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2890,7 +2886,9 @@ hr {
 
 /* line 468, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 471, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 469, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 470, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 473, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2898,23 +2896,21 @@ hr {
 
 /* line 477, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 478, ../bower_components/fontawesome/scss/_icons.scss */
-
 /* line 479, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 480, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 481, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 486, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 482, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 487, ../bower_components/fontawesome/scss/_icons.scss */
+/* line 483, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 488, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 489, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 491, ../bower_components/fontawesome/scss/_icons.scss */
-
-/* line 492, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 493, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2924,19 +2920,17 @@ hr {
 
 /* line 496, ../bower_components/fontawesome/scss/_icons.scss */
 
+/* line 497, ../bower_components/fontawesome/scss/_icons.scss */
+
 /* line 498, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 500, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 502, ../bower_components/fontawesome/scss/_icons.scss */
 
-/* line 503, ../bower_components/fontawesome/scss/_icons.scss */
-
 /* line 504, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 505, ../bower_components/fontawesome/scss/_icons.scss */
-
-/* line 506, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 507, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -2946,11 +2940,11 @@ hr {
 
 /* line 510, ../bower_components/fontawesome/scss/_icons.scss */
 
+/* line 511, ../bower_components/fontawesome/scss/_icons.scss */
+
 /* line 512, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 513, ../bower_components/fontawesome/scss/_icons.scss */
-
-/* line 514, ../bower_components/fontawesome/scss/_icons.scss */
 
 /* line 515, ../bower_components/fontawesome/scss/_icons.scss */
 
@@ -3022,6 +3016,92 @@ hr {
 
 /* line 549, ../bower_components/fontawesome/scss/_icons.scss */
 
+/* line 550, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 551, ../bower_components/fontawesome/scss/_icons.scss */
+
 /* line 552, ../bower_components/fontawesome/scss/_icons.scss */
 
-/*# sourceMappingURL=style.css.map */
+/* line 555, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 556, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 557, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 558, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 559, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 560, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 561, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 562, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 563, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 564, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 565, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 566, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 567, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 568, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 569, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 570, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 571, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 572, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 573, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 574, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 575, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 576, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 577, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 578, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 579, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 580, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 581, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 582, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 583, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 584, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 585, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 586, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 587, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 588, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 589, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 590, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 591, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 593, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 594, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 595, ../bower_components/fontawesome/scss/_icons.scss */
+
+/* line 596, ../bower_components/fontawesome/scss/_icons.scss */
+
+/*# sourceMappingURL=tidy.css.map */
